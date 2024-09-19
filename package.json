@@ -9,7 +9,7 @@
         "email": "nylun@outlook.fr",
         "url": "https://github.com/nylunn"
     },
-    "url": "https://allfightpvp.fr/launcherdownload/",
+    "url": "https://allfightpvp.fr/launcherdownload",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
