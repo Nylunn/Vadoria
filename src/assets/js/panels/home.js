@@ -230,11 +230,7 @@ class Home {
 
             ignored: [...options.ignored],
 
-            java: {
-                path: configClient.java_config.java_path,
-                version: 8,
-                type: 'jre',
-              },
+            javaPath: configClient.java_config.java_path,
 
             screen: {
                 width: configClient.game_config.screen_size.width,
