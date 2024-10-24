@@ -1,22 +1,18 @@
 {
-    "name": "AllFightPvP",
+    "name": "allfightpvp",
     "preductname": "AllFightPvP",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "description": "Developped by Nylun",
     "main": "src/app.js",
-    "author": {
-        "name": "Nylun, Inc.",
-        "email": "nylun@outlook.fr",
-        "url": "https://github.com/nylunn"
-    },
-    "url": "https://allfightpvp.fr/dl",
+    "author": "Nylun, Inc. <nylun@outlook.fr> (https://github.com/nylunn)",
+    "url": "https://allfightpvp.ovh/dl",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
         "icon": "node build.js --icon=https://github.com/Nylunn/Vadoria/tree/master/src/assets/images/icon.png"
     },
-    "license": "CCANC",
+    "license": "UNLICENSED",
     "nodemonConfig": {
         "ext": "js,html,css",
         "ignore": "**/test"
@@ -39,6 +35,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Nylunn/Vadoria/tree/master.git"
-    }
+        "url": "git+https://github.com/Nylunn/Vadoria.git#master.git"
+    },
+    "directories": {
+        "doc": "docs"
+    },
+    "bugs": {
+        "url": "https://github.com/Nylunn/Vadoria/issues"
+    },
+    "homepage": "https://github.com/Nylunn/Vadoria/tree/master.git#readme"
 }
