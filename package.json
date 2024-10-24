@@ -1,11 +1,11 @@
 {
     "name": "allfightpvp",
     "preductname": "AllFightPvP",
-    "version": "1.2.0",
+    "version": "2.2.0",
     "description": "Developped by Nylun",
     "main": "src/app.js",
-    "author": "Nylun, Inc. <nylun@outlook.fr> (https://github.com/nylunn)",
-    "url": "https://allfightpvp.ovh/dl",
+    "author": "Nylun, Inc.  (https://github.com/nylunn)",
+    "url": "https://dl.allfightpvp.ovh",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
