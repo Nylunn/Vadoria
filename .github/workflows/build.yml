@@ -1,4 +1,3 @@
-# module du helios launcher
 name: Launcher Build
 on:
   push:
@@ -28,16 +27,15 @@ jobs:
   build-launcher:
     needs: create-release
     runs-on: ${{ matrix.os }}
-
     strategy:
       matrix:
-        os: [macos-14, ubuntu-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
-      - name: Set up Node
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
@@ -51,8 +49,14 @@ jobs:
         run: npm ci
         shell: bash
 
-      - name: Build
+      - name: Build Launcher
         env:
-          GH_TOKEN: ${{ secrets.github_token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Utilisation correcte du secret
         run: npm run build
         shell: bash
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: launcher-build-${{ matrix.os }}
+          path: dist/
