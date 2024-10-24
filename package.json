@@ -1,7 +1,7 @@
 {
     "name": "allfightpvp",
     "preductname": "AllFightPvP",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "Developped by Nylun",
     "main": "src/app.js",
     "author": "Nylun, Inc.  (https://github.com/nylunn)",
