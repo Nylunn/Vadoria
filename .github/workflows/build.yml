@@ -51,12 +51,12 @@ jobs:
 
       - name: Build Launcher
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Utilisation correcte du secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run build
         shell: bash
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Mise à jour vers v3
         with:
           name: launcher-build-${{ matrix.os }}
           path: dist/
