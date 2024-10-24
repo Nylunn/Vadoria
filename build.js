@@ -71,7 +71,7 @@ class Index {
                 files: ["app/**/*", "package.json", "LICENSE.md", "node_modules/7zip-bin/**/**/*"],
                 directories: { "output": "dist" },
                 compression: 'maximum',
-                asar: true,
+                asar: false,
                 publish: [{
                     provider: "github",
                     releaseType: 'release',
