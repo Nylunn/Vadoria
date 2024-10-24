@@ -1,7 +1,7 @@
 {
     "name": "allfightpvp",
     "preductname": "AllFightPvP",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Developped by Nylun",
     "main": "src/app.js",
     "author": "Nylun, Inc.  (https://github.com/nylunn)",
@@ -37,8 +37,10 @@
         "type": "git",
         "url": "git+https://github.com/Nylunn/Vadoria.git#master.git"
     },
-    "directories": {
-        "doc": "docs"
+    "build": {
+        "directories": {
+            "doc": "docs"
+        }
     },
     "bugs": {
         "url": "https://github.com/Nylunn/Vadoria/issues"
