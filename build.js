@@ -68,7 +68,7 @@ class Index {
                 copyright: 'Copyright © 2020-2024 AllFightPvP',
                 artifactName: "${productName}-${os}-${arch}.${ext}",
                 extraMetadata: { main: 'app/app.js' },
-                files: ["app/**/*", "package.json", "LICENSE.md"],
+                files: ["app/**/*", "package.json", "LICENSE.md", "node_modules/7zip-bin/**/**/*"],
                 directories: { "output": "dist" },
                 compression: 'maximum',
                 asar: true,
