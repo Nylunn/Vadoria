@@ -1,7 +1,7 @@
 {
-    "name": "allfightpvp",
+    "name": "AllFightPvP-Launcher",
     "preductname": "AllFightPvP",
-    "version": "2.2.3",
+    "version": "2.2.5",
     "description": "Developped by Nylun",
     "main": "src/app.js",
     "author": "Nylun, Inc.  (https://github.com/nylunn)",
